@@ -21,3 +21,8 @@ theme: /
     state: Match
         event!: match
         a: {{$context.intent.answer}}
+
+    state: KnowledgeBase
+        intentGroup!: /KnowledgeBase
+        script:
+            $faq.pushReplies();

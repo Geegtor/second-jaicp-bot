@@ -1,96 +1,626 @@
 {
-    "project": {
-        "id": "zb-cailapub",
-        "name": "zb-cailapub",
-        "folder": "/platform"
+  "project" : {
+    "id" : "gitpushtest-1000073129-IDF",
+    "name" : "gitpushtest-1000073129-IDF",
+    "folder" : "/platform"
+  },
+  "settings" : {
+    "language" : "ru",
+    "spellingCorrection" : false,
+    "classificationAlgorithm" : "sts",
+    "timezone" : "Europe/Moscow",
+    "extendedSettings" : {
+      "tokenizerEngine" : "mystem",
+      "useShared" : false
     },
-    "settings": {
-        "language": "ru",
-        "spellingCorrection": false,
-        "classificationAlgorithm": "sts",
-        "validation": {
-            "phraseValidationEnabled": true,
-            "answerValidationEnabled": true,
-            "phraseValidationThreshold": 0.5,
-            "answerValidationThreshold": 0.8
-        },
-        "timezone": "Europe/Moscow",
-        "extendedSettings": {
-            "tokenizerEngine": "mystem",
-            "useShared": false
-        }
+    "shared" : false,
+    "validation" : {
+      "phraseValidationEnabled" : true,
+      "answerValidationEnabled" : true,
+      "phraseValidationThreshold" : 0.5,
+      "answerValidationThreshold" : 0.8
+    }
+  },
+  "intents" : [ {
+    "path" : "/пока",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "пока"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
     },
-    "intents": [
-        {
-            "path": "/пока",
-            "description": null,
-            "answer": null,
-            "customData": null,
-            "enabled": true,
-            "phrases": [
-                {
-                    "text": "пока",
-                    "entities": null
-                }
-            ],
-            "patterns": null,
-            "slots": null
-        },
-        {
-            "path": "/привет",
-            "description": null,
-            "answer": null,
-            "customData": null,
-            "enabled": true,
-            "phrases": [
-                {
-                    "text": "привет",
-                    "entities": null
-                }
-            ],
-            "patterns": null,
-            "slots": null
-        }
-    ],
-    "entities": [],
-    "enabledSystemEntities": [
-        "duckling.number",
-        "duckling.time",
-        "duckling.duration",
-        "duckling.phone-number",
-        "duckling.email",
-        "duckling.url"
-    ],
-    "systemEntities": [
-        {
-            "name": "duckling.number",
-            "version": "v2",
-            "enabled": true
-        },
-        {
-            "name": "duckling.time",
-            "version": "v2",
-            "enabled": true
-        },
-        {
-            "name": "duckling.duration",
-            "version": "v2",
-            "enabled": true
-        },
-        {
-            "name": "duckling.phone-number",
-            "version": "v2",
-            "enabled": true
-        },
-        {
-            "name": "duckling.email",
-            "version": "v2",
-            "enabled": true
-        },
-        {
-            "name": "duckling.url",
-            "version": "v2",
-            "enabled": true
-        }
-    ]
+    "priority" : 0
+  }, {
+    "path" : "/привет",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "привет"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.Образование/Root/Где прочитать отзывы о вас?",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "Где прочитать отзывы о вас?"
+    }, {
+      "text" : "отзывы о преподавателях"
+    }, {
+      "text" : "есть отзывы тех кто у вас учился"
+    }, {
+      "text" : "хочу почитать отзывы о вашей школе"
+    }, {
+      "text" : "у вас хорошие отзывы?"
+    }, {
+      "text" : "отзывы о курсах"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.Образование/Root/Зачем входное тестирование?",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "Зачем входное тестирование?"
+    }, {
+      "text" : "обязательно проходить входное тестирование"
+    }, {
+      "text" : "для чего нужно входное тестирование"
+    }, {
+      "text" : "входное тестирование это что"
+    }, {
+      "text" : "зачем решать входное тестирование"
+    }, {
+      "text" : "входное тестирование обязательно"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.Образование/Root/Как выбрать курс?",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "Как выбрать курс?"
+    }, {
+      "text" : "помогите подобрать курс"
+    }, {
+      "text" : "не знаю какой курс выбрать"
+    }, {
+      "text" : "какой курс самый полезный"
+    }, {
+      "text" : "выбрать подходящий курс"
+    }, {
+      "text" : "самая интересная программа"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.Образование/Root/Какие курсы у вас есть?",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "Какие курсы у вас есть?"
+    }, {
+      "text" : "список курсов"
+    }, {
+      "text" : "хочу пройти у вас курс"
+    }, {
+      "text" : "на какие курсы сейчас открыт набор"
+    }, {
+      "text" : "какие у вас существуют курсы"
+    }, {
+      "text" : "на какие программы сейчас можно записаться"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.Образование/Root/Какие средства связи используются для занятий?",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "Какие средства связи используются для занятий?"
+    }, {
+      "text" : "где мы будем созваниваться с преподавателем"
+    }, {
+      "text" : "какие месенджеры вы используете"
+    }, {
+      "text" : "можно написать преподавателю в соцсетях"
+    }, {
+      "text" : "через что учитель будет мне звонить во время урока"
+    }, {
+      "text" : "как связаться с учителем"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.Образование/Root/Как оплатить обучение?",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "Как оплатить обучение?"
+    }, {
+      "text" : "когда нужно платить за курс"
+    }, {
+      "text" : "подскажите по оплате занятий"
+    }, {
+      "text" : "Ваши уроки нужно оплачивать?"
+    }, {
+      "text" : "когда надо будет оплачивать курс"
+    }, {
+      "text" : "как вносить плату за обучение"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.Образование/Root/Как сменить преподавателя?",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "Как сменить преподавателя?"
+    }, {
+      "text" : "я хочу другого куратора"
+    }, {
+      "text" : "можно поменять учителя"
+    }, {
+      "text" : "хочу заниматься с другим преподавателем"
+    }, {
+      "text" : "сменить учителя"
+    }, {
+      "text" : "можно мне позаниматься с другим учителем"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.Образование/Root/Мне дадут сертификат?",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "выдается ли сертификат по окончании обучения"
+    }, {
+      "text" : "я получу диплом о пройденном обучении"
+    }, {
+      "text" : "документ подтверждающий что я прошел курс"
+    }, {
+      "text" : "вы выдаете сертификат тем кто закончил программу"
+    }, {
+      "text" : "Мне дадут сертификат?"
+    }, {
+      "text" : "сертификат об окончании курса"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.Образование/Root/Как стать преподавателем?",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "Как стать преподавателем?"
+    }, {
+      "text" : "я хочу преподавать у вас"
+    }, {
+      "text" : "хочу устроиться к вам на работу"
+    }, {
+      "text" : "вы берете новых преподавателей"
+    }, {
+      "text" : "Можно пойти работать в вашу школу?"
+    }, {
+      "text" : "хочу начать преподавать у вас"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.Образование/Root/Можно оплатить обучение в рассрочку?",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "Можно оплатить обучение в рассрочку?"
+    }, {
+      "text" : "рассрочка по плате за обучение"
+    }, {
+      "text" : "оплата курсов в рассрочку"
+    }, {
+      "text" : "можно оформить оплату в рассрочку?"
+    }, {
+      "text" : "оплата в рассрочку возможна"
+    }, {
+      "text" : "рассрочка на оплату занятий"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.Образование/Root/Сколько длится пробный урок?",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "Сколько длится пробный урок?"
+    }, {
+      "text" : "Пробное занятие длится столько же сколько обычное?"
+    }, {
+      "text" : "сколько времени отводится на пробное занятие"
+    }, {
+      "text" : "сколько идет тестовый урок?"
+    }, {
+      "text" : "как долго идет пробное занятие"
+    }, {
+      "text" : "длительность пробного урока"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.Образование/Root/Сколько стоит обучение?",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "Сколько стоит обучение?"
+    }, {
+      "text" : "сколько стоят ваши курсы"
+    }, {
+      "text" : "сколько вы берете за обучение"
+    }, {
+      "text" : "у вас дорого учиться"
+    }, {
+      "text" : "сколько нужно платить за обучение"
+    }, {
+      "text" : "занятия стоят дорого"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.Образование/Root/Сколько стоит пробный урок?",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "Сколько стоит пробный урок?"
+    }, {
+      "text" : "скажите за пробный урок платить нужно"
+    }, {
+      "text" : "мне нужно платить за пробное занятие"
+    }, {
+      "text" : "вы берете деньги за пробное занятие"
+    }, {
+      "text" : "тестовый урок надо оплачивать?"
+    }, {
+      "text" : "пробный урок бесплатный или нет"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.Образование/Root/Что будет, если не сделать домашнее задание?",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "Что будет, если не сделать домашнее задание?"
+    }, {
+      "text" : "забыла сделать дз"
+    }, {
+      "text" : "я не сделал домашку"
+    }, {
+      "text" : "у меня нет домашней работы"
+    }, {
+      "text" : "что если не выполнил д з?"
+    }, {
+      "text" : "не смог сделать домашнее задание"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.Образование/Root/Что такое пробный урок?",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "Что такое пробный урок?"
+    }, {
+      "text" : "пробное занятие это что"
+    }, {
+      "text" : "зачем нужно пробное занятие"
+    }, {
+      "text" : "для чего проводится пробный урок"
+    }, {
+      "text" : "в чем смысл пробного урока"
+    }, {
+      "text" : "для чего нужно пробное занятие"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.Образование/Root/Возможен ли возврат средств?",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "Возможен ли возврат средств?"
+    }, {
+      "text" : "хочу вернуть деньги за обучение"
+    }, {
+      "text" : "Вы можете возместить плату за занятия?"
+    }, {
+      "text" : "оформить возврат средств"
+    }, {
+      "text" : "верните деньги потраченные на уроки"
+    }, {
+      "text" : "возмещение средств"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.Образование/Root/Вы задаете домашнее задание?",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "Вы задаете домашнее задание?"
+    }, {
+      "text" : "у вас нужно делать дз"
+    }, {
+      "text" : "у вас бывают домашки"
+    }, {
+      "text" : "домашнюю работу нужно делать?"
+    }, {
+      "text" : "бывает ли домашнее задание"
+    }, {
+      "text" : "вы даете д з"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.Образование/Root/Какие материалы нужны для занятий?",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "Какие материалы нужны для занятий?"
+    }, {
+      "text" : "что мне потребуется для занятий"
+    }, {
+      "text" : "какие есть необходимые материалы для занятий"
+    }, {
+      "text" : "какие канцелярские принадлежности понядобятся"
+    }, {
+      "text" : "что требуется для процесса обучения"
+    }, {
+      "text" : "что нужно из вещей"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.Образование",
+    "enabled" : true,
+    "shared" : false,
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "priority" : 0
+  } ],
+  "entities" : [ ],
+  "enabledSystemEntities" : [ "duckling.number", "duckling.time", "duckling.duration", "duckling.phone-number", "duckling.email", "duckling.url" ],
+  "spellerDictionary" : [ ],
+  "systemEntities" : [ {
+    "name" : "mystem.geo",
+    "enabled" : false
+  }, {
+    "name" : "mystem.persn",
+    "enabled" : false
+  }, {
+    "name" : "mystem.obsc",
+    "enabled" : false
+  }, {
+    "name" : "mystem.patrn",
+    "enabled" : false
+  }, {
+    "name" : "mystem.famn",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.romn",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.latn",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.numb",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.intg",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.abbr",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.name",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.surn",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.patr",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.geox",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.orgn",
+    "enabled" : false
+  }, {
+    "name" : "duckling.number",
+    "version" : "v2",
+    "enabled" : true
+  }, {
+    "name" : "duckling.ordinal",
+    "version" : "v2",
+    "enabled" : false
+  }, {
+    "name" : "duckling.amount-of-money",
+    "version" : "v2",
+    "enabled" : false
+  }, {
+    "name" : "duckling.distance",
+    "version" : "v2",
+    "enabled" : false
+  }, {
+    "name" : "duckling.time",
+    "version" : "v2",
+    "enabled" : true
+  }, {
+    "name" : "duckling.date",
+    "version" : "v2",
+    "enabled" : false
+  }, {
+    "name" : "duckling.time-of-day",
+    "version" : "v2",
+    "enabled" : false
+  }, {
+    "name" : "duckling.duration",
+    "version" : "v2",
+    "enabled" : true
+  }, {
+    "name" : "duckling.phone-number",
+    "version" : "v2",
+    "enabled" : true
+  }, {
+    "name" : "duckling.email",
+    "version" : "v2",
+    "enabled" : true
+  }, {
+    "name" : "duckling.url",
+    "version" : "v2",
+    "enabled" : true
+  }, {
+    "name" : "duckling.interval",
+    "version" : "v2",
+    "enabled" : false
+  }, {
+    "name" : "mlps-obscene.obscene",
+    "enabled" : false
+  }, {
+    "name" : "zb.datetime",
+    "enabled" : false
+  }, {
+    "name" : "zb.number",
+    "enabled" : false
+  } ],
+  "faq" : [ {
+    "intentPath" : "/KnowledgeBase/FAQ.Образование/Root/Где прочитать отзывы о вас?",
+    "replies" : [ ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.Образование/Root/Зачем входное тестирование?",
+    "replies" : [ ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.Образование/Root/Как выбрать курс?",
+    "replies" : [ ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.Образование/Root/Какие курсы у вас есть?",
+    "replies" : [ ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.Образование/Root/Какие средства связи используются для занятий?",
+    "replies" : [ ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.Образование/Root/Как оплатить обучение?",
+    "replies" : [ ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.Образование/Root/Как сменить преподавателя?",
+    "replies" : [ ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.Образование/Root/Мне дадут сертификат?",
+    "replies" : [ ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.Образование/Root/Как стать преподавателем?",
+    "replies" : [ ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.Образование/Root/Можно оплатить обучение в рассрочку?",
+    "replies" : [ ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.Образование/Root/Сколько длится пробный урок?",
+    "replies" : [ ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.Образование/Root/Сколько стоит обучение?",
+    "replies" : [ ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.Образование/Root/Сколько стоит пробный урок?",
+    "replies" : [ ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.Образование/Root/Что будет, если не сделать домашнее задание?",
+    "replies" : [ ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.Образование/Root/Что такое пробный урок?",
+    "replies" : [ ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.Образование/Root/Возможен ли возврат средств?",
+    "replies" : [ {
+      "type" : "text",
+      "text" : "<a href=\"https://ya.ru/\" target=\"_blank\">Ссылка на яднекса перечёкрнута</a><strike></strike><br>",
+      "markup" : "html",
+      "key" : "_ptqc4orli"
+    } ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.Образование/Root/Вы задаете домашнее задание?",
+    "replies" : [ {
+      "type" : "text",
+      "text" : "Нет",
+      "markup" : "plain",
+      "key" : "_b7xgr63rl"
+    } ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.Образование/Root/Какие материалы нужны для занятий?",
+    "replies" : [ ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.Образование",
+    "replies" : [ ]
+  } ],
+  "skills" : [ ]
 }
