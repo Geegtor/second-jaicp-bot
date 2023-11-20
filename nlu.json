@@ -439,14 +439,6 @@
     },
     "patterns" : [ ],
     "priority" : 0
-  }, {
-    "path" : "/KnowledgeBase/FAQ.Образование",
-    "enabled" : true,
-    "shared" : false,
-    "classificationRules" : {
-      "refs" : [ ]
-    },
-    "priority" : 0
   } ],
   "entities" : [ ],
   "enabledSystemEntities" : [ "duckling.number", "duckling.time", "duckling.duration", "duckling.phone-number", "duckling.email", "duckling.url" ],
@@ -603,9 +595,15 @@
     "intentPath" : "/KnowledgeBase/FAQ.Образование/Root/Возможен ли возврат средств?",
     "replies" : [ {
       "type" : "text",
-      "text" : "<a href=\"https://ya.ru/\" target=\"_blank\">Ссылка на яднекса перечёкрнута</a><strike></strike><br>",
+      "text" : "<br>",
       "markup" : "html",
       "key" : "_ptqc4orli"
+    }, {
+      "type" : "file",
+      "fileUrl" : "https://248305.selcdn.ru/zfl_prod/1000073129/268802423/54TF11NgLZAkcQtH.html",
+      "fileName" : "template.html",
+      "uploadDate" : 1700474534774,
+      "key" : "_9ii21mfev"
     } ]
   }, {
     "intentPath" : "/KnowledgeBase/FAQ.Образование/Root/Вы задаете домашнее задание?",
@@ -617,9 +615,6 @@
     } ]
   }, {
     "intentPath" : "/KnowledgeBase/FAQ.Образование/Root/Какие материалы нужны для занятий?",
-    "replies" : [ ]
-  }, {
-    "intentPath" : "/KnowledgeBase/FAQ.Образование",
     "replies" : [ ]
   } ],
   "skills" : [ ]

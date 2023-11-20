@@ -8,11 +8,11 @@ theme: /
 
     state: Hello
         intent!: /привет
-        a: Привет masterBranch
+        a: Привет
 
     state: Bye
         intent!: /пока
-        a: Пока masterBranch
+        a: Пока
 
     state: NoMatch
         event!: noMatch
