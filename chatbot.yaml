@@ -13,3 +13,7 @@ nlp:
   intentNoMatchThresholds:
     phrases: 0.2
     patterns: 0.2
+  lengthLimit:
+    enabled: true
+    symbols: 100
+    words: -1

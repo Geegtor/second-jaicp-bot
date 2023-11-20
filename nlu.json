@@ -585,9 +585,9 @@
     "intentPath" : "/KnowledgeBase/FAQ.Образование/Root/тестовый вопрос",
     "replies" : [ {
       "type" : "text",
-      "text" : "<pre>&lt;a href=\"https://ya.ru\"&gt;Link&lt;/a&gt;<br></pre><br>",
+      "text" : "&lt;a href = \"ya.ru\"&gt;Link&lt;/a&gt;<br>",
       "markup" : "html",
-      "key" : "_ptqc4orli"
+      "key" : "_api0ifedp"
     } ]
   }, {
     "intentPath" : "/KnowledgeBase/FAQ.Образование/Root/Вы задаете домашнее задание?",
