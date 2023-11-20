@@ -374,21 +374,11 @@
     "patterns" : [ ],
     "priority" : 0
   }, {
-    "path" : "/KnowledgeBase/FAQ.Образование/Root/Возможен ли возврат средств?",
+    "path" : "/KnowledgeBase/FAQ.Образование/Root/тестовый вопрос",
     "enabled" : true,
     "shared" : false,
     "phrases" : [ {
-      "text" : "Возможен ли возврат средств?"
-    }, {
-      "text" : "хочу вернуть деньги за обучение"
-    }, {
-      "text" : "Вы можете возместить плату за занятия?"
-    }, {
-      "text" : "оформить возврат средств"
-    }, {
-      "text" : "верните деньги потраченные на уроки"
-    }, {
-      "text" : "возмещение средств"
+      "text" : "тестовый вопрос"
     } ],
     "classificationRules" : {
       "refs" : [ ]
@@ -592,24 +582,18 @@
     "intentPath" : "/KnowledgeBase/FAQ.Образование/Root/Что такое пробный урок?",
     "replies" : [ ]
   }, {
-    "intentPath" : "/KnowledgeBase/FAQ.Образование/Root/Возможен ли возврат средств?",
+    "intentPath" : "/KnowledgeBase/FAQ.Образование/Root/тестовый вопрос",
     "replies" : [ {
       "type" : "text",
-      "text" : "<br>",
+      "text" : "<pre>&lt;a href=\"https://ya.ru\"&gt;Link&lt;/a&gt;<br></pre><br>",
       "markup" : "html",
       "key" : "_ptqc4orli"
-    }, {
-      "type" : "file",
-      "fileUrl" : "https://248305.selcdn.ru/zfl_prod/1000073129/268802423/54TF11NgLZAkcQtH.html",
-      "fileName" : "template.html",
-      "uploadDate" : 1700474534774,
-      "key" : "_9ii21mfev"
     } ]
   }, {
     "intentPath" : "/KnowledgeBase/FAQ.Образование/Root/Вы задаете домашнее задание?",
     "replies" : [ {
       "type" : "text",
-      "text" : "Нет",
+      "text" : "",
       "markup" : "plain",
       "key" : "_b7xgr63rl"
     } ]

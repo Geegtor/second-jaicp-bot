@@ -4,7 +4,13 @@ theme: /
 
     state: Start
         q!: $regex</start>
-        a: Начнём.
+        script:
+            $response.replies = $response.replies || [];
+            $response.replies.push({
+                "type": "text",
+                "text": "<a href='https://ya.ru'>Link</a>",
+                "markup": "html"
+            });
 
     state: Hello
         intent!: /привет
